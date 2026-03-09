@@ -3,8 +3,7 @@ pipeline {
 
     stages {
         stage('Clone Repository') {
-            steps {
-                git 'https://github.com/vijayyuvaraj/devops-jenkins-demo.git'
+            steps {git branch: 'main', url: 'https://github.com/vijayyuvaraj/devops-jenkins-demo.git'
             }
         }
 
